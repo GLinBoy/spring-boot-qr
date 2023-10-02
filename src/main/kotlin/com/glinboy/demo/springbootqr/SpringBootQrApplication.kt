@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class SpringBootQrApplication
 
 fun main(args: Array<String>) {
-    runApplication<SpringBootQrApplication>(*args)
+	runApplication<SpringBootQrApplication>(*args)
 }
