@@ -19,11 +19,16 @@ repositories {
 	mavenCentral()
 }
 
+val locatorVersion = "0.47"
+val bootstrapVersion = "5.3.2"
+
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.webjars:webjars-locator:${locatorVersion}")
+	implementation("org.webjars:bootstrap:${bootstrapVersion}")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
