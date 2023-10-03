@@ -1,11 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Spring Boot QR</title>
-	<meta content="A project to work with QR in Spring Boot" name="description">
-	<meta content="spring boot qr" name="keywords">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Your Page Title</title>
+	<!-- Include Bootstrap CSS -->
+	<link href="webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<h1>Home Page</h1>
+
+<!-- Header Section -->
+<header class="bg-primary text-white text-center py-4">
+	<h1>Your Header</h1>
+</header>
+
+<!-- Main Content -->
+<div class="container mt-5">
+	<div class="row">
+		<!-- Left Section (Bigger) -->
+		<div class="col-md-8">
+			<!-- Card -->
+			<div class="card">
+				<div class="card-header">
+					Left Section
+				</div>
+				<div class="card-body">
+					<!-- Selection Items with Icons -->
+					<div class="row">
+						<!-- Item 1 -->
+						<div class="col-md-4 mb-4">
+							<div class="text-center">
+								<i class="fas fa-icon-name fa-2x"></i>
+								<p>Item 1</p>
+							</div>
+						</div>
+						<!-- Repeat for Items 2-9 -->
+						<!-- Item 2 -->
+						<div class="col-md-4 mb-4">
+							<div class="text-center">
+								<i class="fas fa-icon-name fa-2x"></i>
+								<p>Item 2</p>
+							</div>
+						</div>
+						<!-- ... Repeat for Items 3-9 -->
+					</div>
+					<!-- Text Box for User Input -->
+					<div class="form-group">
+						<label for="userInput">User Input:</label>
+						<input type="text" class="form-control" id="userInput">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Right Section (Smaller) -->
+		<div class="col-md-4">
+			<!-- Card -->
+			<div class="card">
+				<div class="card-header">
+					Right Section
+				</div>
+				<div class="card-body text-center">
+					<!-- QR Code -->
+					<img src="path/to/your/qr-code.png" alt="QR Code" class="img-fluid mb-3">
+					<!-- Buttons for Download and Share -->
+					<button class="btn btn-primary btn-block mb-2">Download</button>
+					<button class="btn btn-secondary btn-block">Share</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Include Bootstrap and Font Awesome JavaScript -->
+<script src="webjars/bootstrap/js/bootstrap.min.js"></script>
+<script src="webjars/font-awesome/css/all.min.css"></script>
+
 </body>
 </html>
