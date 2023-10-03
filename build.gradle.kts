@@ -21,6 +21,7 @@ repositories {
 
 val locatorVersion = "0.47"
 val bootstrapVersion = "5.3.2"
+val fontawesomeVersion = "6.4.2"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
@@ -29,6 +30,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.webjars:webjars-locator:${locatorVersion}")
 	implementation("org.webjars:bootstrap:${bootstrapVersion}")
+	implementation("org.webjars:font-awesome:${fontawesomeVersion}")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 }
