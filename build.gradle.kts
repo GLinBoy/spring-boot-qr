@@ -30,6 +30,7 @@ dependencies {
 	implementation("org.webjars:webjars-locator:${locatorVersion}")
 	implementation("org.webjars:bootstrap:${bootstrapVersion}")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
 }
 
 tasks.withType<KotlinCompile> {
