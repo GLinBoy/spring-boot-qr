@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Your Page Title</title>
+	<title>Spring Boot QR</title>
 	<!-- Include Bootstrap CSS -->
-	<link href="webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+				integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 
 <!-- Header Section -->
 <header class="bg-primary text-white text-center py-4">
-	<h1>Your Header</h1>
+	<h1>Spring Boot QR</h1>
 </header>
 
 <!-- Main Content -->
@@ -21,33 +23,91 @@
 		<div class="col-md-8">
 			<!-- Card -->
 			<div class="card">
-				<div class="card-header">
-					Left Section
-				</div>
 				<div class="card-body">
 					<!-- Selection Items with Icons -->
-					<div class="row">
-						<!-- Item 1 -->
-						<div class="col-md-4 mb-4">
-							<div class="text-center">
-								<i class="fas fa-icon-name fa-2x"></i>
-								<p>Item 1</p>
-							</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-link"></i>
+								<span class="text-uppercase">url</span>
+							</a>
 						</div>
-						<!-- Repeat for Items 2-9 -->
-						<!-- Item 2 -->
-						<div class="col-md-4 mb-4">
-							<div class="text-center">
-								<i class="fas fa-icon-name fa-2x"></i>
-								<p>Item 2</p>
-							</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-address-card"></i>
+								<span class="text-uppercase">vcard</span>
+							</a>
 						</div>
-						<!-- ... Repeat for Items 3-9 -->
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-file-lines"></i>
+								<span class="text-uppercase">text</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-at"></i>
+								<span class="text-uppercase">email</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-message"></i>
+								<span class="text-uppercase">sms</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-wifi"></i>
+								<span class="text-uppercase">wifi</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-brands fa-bitcoin"></i>
+								<span class="text-uppercase">bitcoin</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-brands fa-square-x-twitter"></i>
+								<span class="text-uppercase">X (twitter)</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-brands fa-square-facebook"></i>
+								<span class="text-uppercase">facebook</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-file-pdf"></i>
+								<span class="text-uppercase">pdf</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-music"></i>
+								<span class="text-uppercase">mp3</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-brands fa-app-store-ios"></i>
+								<span class="text-uppercase">app stores</span>
+							</a>
+						</div>
+						<div class="col-md-3 mb-1">
+							<a class="btn btn-light btn-block w-100" href="#">
+								<i class="fa-solid fa-image"></i>
+								<span class="text-uppercase">images</span>
+							</a>
+						</div>
 					</div>
 					<!-- Text Box for User Input -->
 					<div class="form-group">
-						<label for="userInput">User Input:</label>
-						<input type="text" class="form-control" id="userInput">
+						<textarea class="form-control" id="userInput" rows="5"></textarea>
 					</div>
 				</div>
 			</div>
@@ -57,15 +117,22 @@
 		<div class="col-md-4">
 			<!-- Card -->
 			<div class="card">
-				<div class="card-header">
-					Right Section
-				</div>
 				<div class="card-body text-center">
-					<!-- QR Code -->
-					<img src="path/to/your/qr-code.png" alt="QR Code" class="img-fluid mb-3">
-					<!-- Buttons for Download and Share -->
-					<button class="btn btn-primary btn-block mb-2">Download</button>
-					<button class="btn btn-secondary btn-block">Share</button>
+					<div class="row">
+						<div class="col-12">
+							<img src="qr-code.png" alt="QR Code" class="img-fluid mb-1">
+						</div>
+						<div class="col-12">
+							<div class="row">
+								<div class="col-6">
+									<button class="btn btn-success btn-block w-100">Download</button>
+								</div>
+								<div class="col-6">
+									<button class="btn btn-secondary btn-block w-100">Share</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -73,8 +140,15 @@
 </div>
 
 <!-- Include Bootstrap and Font Awesome JavaScript -->
-<script src="webjars/bootstrap/js/bootstrap.min.js"></script>
-<script src="webjars/font-awesome/css/all.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+				integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+				integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 </html>
