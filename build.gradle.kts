@@ -22,7 +22,7 @@ repositories {
 
 val locatorVersion = "0.50"
 val bootstrapVersion = "5.3.2"
-val fontawesomeVersion = "6.4.2"
+val fontawesomeVersion = "6.5.1"
 val jQueryVersion = "3.7.1"
 
 dependencies {
