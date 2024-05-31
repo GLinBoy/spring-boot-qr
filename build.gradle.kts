@@ -20,9 +20,9 @@ repositories {
 	mavenCentral()
 }
 
-val locatorVersion = "0.50"
+val locatorVersion = "0.52"
 val bootstrapVersion = "5.3.3"
-val fontawesomeVersion = "6.5.1"
+val fontawesomeVersion = "6.5.2"
 val jQueryVersion = "3.7.1"
 
 dependencies {
