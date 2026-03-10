@@ -6,7 +6,7 @@ plugins {
 	id("org.springframework.boot") version "4.0.3"
 	id("io.spring.dependency-management") version "1.1.7"
 	id("org.ec4j.editorconfig") version "0.1.0"
-	id ("com.github.ben-manes.versions") version "0.51.0"
+	id ("com.github.ben-manes.versions") version "0.53.0"
 }
 
 group = "com.glinboy.demo"
@@ -23,9 +23,9 @@ repositories {
 }
 
 val locatorVersion = "0.52"
-val bootstrapVersion = "5.3.3"
-val fontawesomeVersion = "6.7.1"
-val jQueryVersion = "3.7.1"
+val bootstrapVersion = "5.3.8"
+val fontawesomeVersion = "7.2.0"
+val jQueryVersion = "4.0.0"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
